@@ -13,4 +13,12 @@ describe "add new comment process" do
     click_on 'Submit'
     expect(page).to have_content 'Comment added'
   end
+  it "will show the new comment form on same page with Ajax" do
+    user = FactoryGirl.create(:user)
+    login_as(user, :scope => :user)
+    post = FactoryGirl.create(:post)
+    visit post_path(post)
+    click_on 'Comment'
+    expect(page).to have_content 'Text'
+  end
 end

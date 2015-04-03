@@ -12,7 +12,7 @@ class CommentsController < ApplicationController
     if @comment.save
       respond_to do |format|
         format.html { redirect_to post_path(@post) }
-          # flash[:notice] = "Comment added"
+          flash[:notice] = "Comment added"
         format.js
       end
 
