@@ -1,0 +1,10 @@
+<%= form_for @post, class:"form-horizontal" do |f| %>
+  <div class="form-group">
+    <%= f.label :title, class:"form-label" %></div>
+    <%= f.text_field :title, class:"form-control" %>
+    <%= f.label :content, class:"form-label" %>
+    <%= f.text_area :content, class:"form-control" %>
+  <br>
+    <%= f.submit "Post", class: ['btn-info', 'btn']%>
+  </div>
+<% end %>
