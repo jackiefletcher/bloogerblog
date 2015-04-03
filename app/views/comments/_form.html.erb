@@ -1,8 +1,10 @@
-<%= form_for [@post, @comment], class:"form-horizontal" do |f| %>
+<%= form_for [@post, @comment], id: "new_comment", remote: true, class:"form-horizontal" do |f| %>
   <div class="form-group">
     <%= f.label :text, class:"form-label" %></div>
     <%= f.text_area :text, class:"form-control" %>
   <br>
     <%= f.submit "Submit", class: ['btn-info', 'btn']%>
+  <br>
+  <br>
   </div>
 <% end %>

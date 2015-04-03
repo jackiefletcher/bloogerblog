@@ -1,0 +1,11 @@
+<div class="well">
+  <p>
+    <%= comment.text %><br><br>
+      <% if current_user %>
+        <%= link_to 'Edit Comment', edit_post_comment_path(@post, comment), class: ['btn-warning', 'btn-sm'] %>
+        <%= link_to 'Delete Comment', post_comment_path(@post, comment), class: ['btn-danger', 'btn-sm'], :data => { :confirm => "Are you sure?",
+                                                                                                         :method => "delete" } %>
+
+      <% end %>
+  </p>
+</div>

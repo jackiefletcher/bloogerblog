@@ -1,0 +1,8 @@
+<% if @post.comments.any? %>
+  <h4>Comments</h4>
+  <% @post.comments.each do |comment| %>
+      <%= render comment, post: @post, comment: comment %>
+  <% end %>
+<% else %>
+  <p>There are no comments yet for this post.</p>
+<% end %>
