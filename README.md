@@ -3,12 +3,6 @@ Blooger
 
 A simple blog website/app, allowing users to create posts and comment on these posts.
 
-View demo: https://bloogerblogger.herokuapp.com
-
-Known Bugs
-------------
-Not sure how it happened, but all the folders on my desktop were pushed to this repo and I can't mass delete them, and can't push to a new repo without including them all as well. 
-
 
 Installation and Usage
 ------------
