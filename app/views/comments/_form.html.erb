@@ -1,7 +1,7 @@
 <%= form_for [@post, @comment], id: "new_comment", remote: true, class:"form-horizontal" do |f| %>
   <div class="form-group">
     <%= f.label :text, class:"form-label" %></div>
-    <%= f.text_area :text, class:"form-control" %>
+    <%= f.text_area :text, class:"form-control, autofocus: true" %>
   <br>
     <%= f.submit "Submit", class: ['btn-info', 'btn']%>
   <br>

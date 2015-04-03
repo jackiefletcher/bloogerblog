@@ -9,7 +9,14 @@ class CommentsController < ApplicationController
   def create
     @post = Post.find(params[:post_id])
     @comment = @post.comments.new(comments_params)
+    user = User.find(@post.user_id)
     if @comment.save
+      message = Message.new(to: user.phone, from: "5038365278" , body: "Your post received a comment!")
+      message.save
+        # if message.save
+        #   flash[:notice] = "Post user has been notified"
+        # end
+
       respond_to do |format|
         format.html { redirect_to post_path(@post) }
           flash[:notice] = "Comment added"

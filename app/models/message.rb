@@ -9,7 +9,7 @@ private
         :url => "https://api.twilio.com/2010-04-01/Accounts/#{ENV['TWILIO_ACCOUNT_SID']}/Messages.json",
         :user => ENV['TWILIO_ACCOUNT_SID'],
         :password => ENV['TWILIO_AUTH_TOKEN'],
-        :payload => { :Body => "Your post received a new comment",
+        :payload => { :Body => body,
                       :To => to,
                       :From => from }
       ).execute

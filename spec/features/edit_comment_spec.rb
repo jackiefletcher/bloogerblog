@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'edit comment process' do
+describe 'edit comment process', vcr: true do
   it 'will edit a comment' do
     user = FactoryGirl.create(:user)
     login_as(user, :scope => :user)

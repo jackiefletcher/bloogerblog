@@ -1,7 +1,7 @@
 <%= form_for @post, class:"form-horizontal" do |f| %>
   <div class="form-group">
     <%= f.label :title, class:"form-label" %></div>
-    <%= f.text_field :title, class:"form-control" %>
+    <%= f.text_field :title, class:"form-control", autofocus: true %>
     <%= f.label :content, class:"form-label" %>
     <%= f.text_area :content, class:"form-control" %>
   <br>

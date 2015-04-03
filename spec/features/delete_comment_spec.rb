@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'delte comment process' do
+describe 'delete comment process', vcr: true do
   it 'will delete a comment' do
     user = FactoryGirl.create(:user)
     login_as(user, :scope => :user)

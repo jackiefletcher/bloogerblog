@@ -6,14 +6,14 @@ http_interactions:
       account sid>/Messages.json
     body:
       encoding: US-ASCII
-      string: Body=Your%20post%20received%20a%20new%20comment&To=1111111&From=5038365278
+      string: Body=Your%20post%20received%20a%20new%20comment&To=5039152323&From=5038365278
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
       Accept-Encoding:
       - gzip, deflate
       Content-Length:
-      - '74'
+      - '77'
       Content-Type:
       - application/x-www-form-urlencoded
       User-Agent:
@@ -26,20 +26,22 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Apr 2015 21:26:47 GMT
+      - Fri, 03 Apr 2015 21:31:09 GMT
       X-Powered-By:
       - AT-5000
       X-Shenanigans:
       - none
       Content-Length:
-      - '154'
+      - '338'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"code": 21211, "message": "The ''To'' number 1111111 is not a valid
-        phone number.", "more_info": "https://www.twilio.com/docs/errors/21211", "status":
-        400}'
+      string: '{"code": 21608, "message": "The number +15039152323 is unverified.
+        Trial accounts cannot send messages to unverified numbers; verify +15039152323
+        at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number
+        to send messages to unverified numbers.", "more_info": "https://www.twilio.com/docs/errors/21608",
+        "status": 400}'
     http_version: 
-  recorded_at: Fri, 03 Apr 2015 21:26:47 GMT
+  recorded_at: Fri, 03 Apr 2015 21:31:09 GMT
 recorded_with: VCR 2.9.3
